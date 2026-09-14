@@ -32,6 +32,24 @@ h1 {
 }
 
 form {
-    xbackground-color: rgb(200, 200, 250);
     padding: 20px;
+    max-width: 700px;
 }
+
+form .field-row {
+    display: grid;
+    grid-template-columns: 200px 1fr 250px;
+    gap: 10px 15px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+form .field-row label {
+    text-align: left;
+}
+
+form .field-row input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+

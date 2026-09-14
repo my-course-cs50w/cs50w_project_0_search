@@ -16,8 +16,33 @@
     </nav>
     <h1>Advanced Search</h1>
     <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
+        Find pages with:<br><br>
+
+        <div class="field-row">
+            <label for="as_q"> all these words:</label>
+            <input type="text" id="as_q" name="as_q">
+            <span>(as_q - all words query)</span>
+        </div>
+
+        <div class="field-row">
+            <label for="as_epq"> this exact word or phrase:</label>
+            <input type="text" id="as_epq" name="as_epq">
+            <span>(as_epq - exact phrase query)</span>
+        </div>
+
+        <div class="field-row">
+            <label for="as_oq"> any of these words:</label>
+            <input type="text" id="as_oq" name="as_oq">
+            <span>(as_oq - optional query)</span>
+        </div>
+
+        <div class="field-row">
+            <label for="as_eq"> none of these words:</label>
+            <input type="text" id="as_eq" name="as_eq">
+            <span>(as_eq - exclude query)</span>
+        </div>
+
+        <input type="submit" value="Google Advanced Search">
     </form>
 </body>
 
